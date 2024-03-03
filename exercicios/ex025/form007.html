@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Exemplo de Formulario</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="Iest">Estado</label>
             <select name="Estado" id="iest">
@@ -23,6 +23,23 @@
                     <option value="RN">Rio Grande do Norte</option>
                 </optgroup>
             </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="Prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option value="ADM">Adiministrador</option>
+                <option value="CONT">Contabilidade</option>
+                <option value="DEV">Desenvolvidor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem</label> 
+            <br>
+            <textarea name="imsg" id="imsg" cols="30" rows="10"></textarea>
         </p>
 
         <p>
